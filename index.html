@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Components</title>
+  <link rel="stylesheet" href="./styles/index.css"></link>
+  <style>
+    body {
+      font-family: var(--font-family);
+      padding: var(--spacing-30);
+      color: var(--color-black);
+    }
+  </style>
+  <script type="module" src="./components/il-notice.js"></script>
+
+</head>
+<body>
+  <h1>Web Components</h1>
+  <il-notice variation="info" is-dismissable>
+    <p>Something went wrong</p>
+  </il-notice>
+
+  <script>
+    const n = document.getElementsByTagName("il-notice")[0];
+    console.log(n);
+    n.addEventListener("dismiss", () => console.log("jhgfjhgf"))
+  </script>
+</body>
+</html>
