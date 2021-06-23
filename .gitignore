@@ -1,2 +1,6 @@
 build
-node_modules
+wc-mono/il-wc/node_modules
+wc-mono/il-wc-react/node_modules
+
+wc-mono/il-wc/dist
+wc-mono/il-wc-react/dist
