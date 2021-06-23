@@ -1,0 +1,19 @@
+:host {
+  .il-notice {
+    &.error {
+      background: var(--status-dangerLighter);
+      border-color: var(--status-dangerLight);
+    }
+    &.info {
+      background: var(--status-infoLighter);
+      border-color: var(--status-infoLight);
+    }
+    border-width: 2px;
+    border-style: solid;
+    border-radius: var(--border-radius-4, "4px");
+    padding: var(--spacing-10);
+  }
+  .btn-close {
+    float: right;
+  }
+}
